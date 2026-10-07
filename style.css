@@ -218,10 +218,11 @@ HEADER / ABOUT US ↓
 .template__txt--large {
   font-size: 56px;
   margin-bottom: 32px;
+  color: black;
 }
 
 .template__txt--small {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -229,13 +230,14 @@ HEADER / ABOUT US ↓
 .input--centered {
   display: flex;
   position: relative;
+  margin-bottom: 8vw;
 }
 
 .input__mail {
   padding: 24px 240px 24px 24px;
   border-radius: 32px;
   border: solid rgba(128, 128, 128, 0.562);
-  font-size: 16px;
+  font-size: 1.5rem;
   display: flex;
 }
 
@@ -275,6 +277,21 @@ header .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.gray{
+    color: rgba(184, 175, 175, 0.541);
+    font-weight:800 ;
+    margin-bottom: 1vw;
+}
+
+.customer__img--wrapper{
+    opacity: 50%;
+    
+}
+
+.customer__img{
+    width: 100%;
 }
 
 /* 
