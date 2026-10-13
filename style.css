@@ -238,38 +238,40 @@ HEADER / ABOUT US ↓
   margin-bottom: 42px;
 }
 
-.input--centered {
+.input__centered {
   display: flex;
   position: relative;
-  margin-bottom: 8vw;
+  /* margin-bottom: 8vw; */
+  width: 100%;
+  max-width: 448px;
+  height: 68px;
 }
 
 .input__mail {
-  padding: 24px 240px 24px 24px;
-  border-radius: 32px;
-  border: solid rgba(128, 128, 128, 0.562);
-  font-size: 1.5rem;
-  display: flex;
+  padding: 20px 192px 20px 32px;
+  border-radius: 500px;
+  border: 2px solid rgba(128, 128, 128, 0.562);
+  font-size: 16px;
+  font-weight: 500;
+  /* display: flex; */
+  transition: border-color 300ms ease;
 }
 
 .start__btn {
   position: absolute;
-  margin-right: .3rem;
+  /* margin-right: .3rem; */
   display: flex;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
+  right: 8px;
+  top: 8px;
+  bottom: 8px;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
   background-color: rgb(100 21 255);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+
   color: white;
   font-weight: 800;
-  padding: 12px 24px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding: 0px 32px;
   border: none;
   font-size: 16px;
   transition: all 250ms ease;
@@ -574,7 +576,32 @@ MOBILE RESPONSIVENESS ↓
 @media (max-width: 640px) {
   .container {
     padding: 80px 0;
+    
   }
+
+  .nav__links{
+    display: none;
+  }
+
+  .input__centered{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .input__mail{
+    padding: 16px 32px;
+    line-height: 1.5;
+
+  }
+
+  .start__btn{
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px 0;
+    line-height: 1.5;
+  }
+
   .nav__logo {
     margin: 8px 0;
     padding-bottom: 4px;
