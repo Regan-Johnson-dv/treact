@@ -9,6 +9,13 @@
   text-decoration: none;
 }
 
+
+button{
+
+  border: none;
+
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -723,6 +730,10 @@ PRICING ↓
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
 .plan__top {
   display: flex;
   flex-direction: column;
@@ -750,6 +761,11 @@ PRICING ↓
     rgb(56, 178, 172) 0%,
     rgb(129, 230, 217) 100%
   );
+}
+
+.plan:nth-child(3) .plan__stripe, .plan:nth-child(3) .plan__btn {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 .plan__type {
@@ -799,6 +815,10 @@ PRICING ↓
   border-bottom: 2px solid rgb(229, 231, 235);
 }
 
+.plan:nth-child(2) .plan__middle {
+    border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);}
+
 .plan__target {
   font-size: 20px;
   font-weight: 700;
@@ -820,6 +840,47 @@ PRICING ↓
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+.plan__btn{
+    border-radius: 0.25rem;
+    background-color: rgb(100 21 255);
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    color: rgb(247 250 252);
+    transition: all 300ms ease;
+    width: 100%;
+    border-radius: 9999px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.plan__btn:hover {
+    transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;}
+
+.plan:nth-child(2) .plan__type, .plan:nth-child(2) .plan__price, .plan:nth-child(2) .plan__target, .plan:nth-child(2) .plan__duration, .plan:nth-child(2) .plan__feature {
+    color: #f7fafc;
+}
+
+.plan:nth-child(2) .plan__btn{
+      color: #6415ff;
+    background-color: #f7fafc;
+}
+
+.plans__blob{
+    z-index: -10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
+    height: 256px;
+    width: 256px;
+    opacity: 0.25;
+}
+
 /* 
 
 TESTIMONIALS ↓
