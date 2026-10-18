@@ -407,6 +407,10 @@ FEATURES ↓
   width: calc(100% / 3);
 }
 
+#features .section__title {
+  text-align: center;
+}
+
 #features .section__para {
   text-align: center;
   max-width: 576px;
@@ -1251,10 +1255,25 @@ footer a::after {
 MOBILE RESPONSIVENESS ↓
  */
 
+/* 
+
+
+1280px
+ 
+
+  */
+
 @media (max-width: 1280px) {
   header .row {
     align-items: flex-end;
   }
+
+  .steps__grid {
+    height: 5rem;
+    width: 5rem;
+    bottom: -50px;
+  }
+
 
   h1,
   .template__txt--large {
@@ -1280,7 +1299,7 @@ MOBILE RESPONSIVENESS ↓
 /* 
 
 
-1024
+1024px
 
 
  */
@@ -1289,12 +1308,22 @@ MOBILE RESPONSIVENESS ↓
   .btn__menu {
     display: block;
   }
+
+  .feature {
+    width: calc(50%);
+  }
+
   header .row {
     flex-direction: column;
     align-items: center;
   }
   footer {
     padding: 80px 32px;
+  }
+
+  #features .section__title,
+  #pricing .section__title {
+    font-size: 48px;
   }
 
   .hero,
@@ -1312,6 +1341,10 @@ MOBILE RESPONSIVENESS ↓
 
   .customer__img {
     padding-right: 0;
+  }
+
+  .section__title {
+    font-size: 36px;
   }
 
   .hero {
@@ -1336,7 +1369,21 @@ MOBILE RESPONSIVENESS ↓
   .nav__link--wrapper {
     display: none;
   }
+
+  .section__para {
+    font-size: 16px;
+  }
+
+  .features {
+    max-width: 768px;
+  }
 }
+
+/* 
+
+768px
+
+*/
 
 @media (max-width: 768px) {
   #quality .row,
@@ -1351,7 +1398,54 @@ MOBILE RESPONSIVENESS ↓
   #pricing .row {
     margin-top: 40px;
   }
+
+  .step{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__para {
+    font-size: 14px;
+  }
+
+  .features {
+    justify-content: center;
+  }
+
+  .feature {
+    width: auto;
+    max-width: 384px;
+  }
+
+  .qw__desc,
+  .qw__img--wrapper,
+  .steps__desc,
+  .steps__img--wrapper,
+  .values__desc,
+  .values__img,
+  .testimonials__desc,
+  .testimonials__img {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .qw__desc,
+  .steps__desc,
+  .values__desc,
+  .testimonials__desc {
+    padding: 0;
+    margin-top: 64px;
+    text-align: center;
+  }
 }
+
+/*
+
+
+640px
+
+
+*/
 
 @media (max-width: 640px) {
   .container {
@@ -1363,9 +1457,29 @@ MOBILE RESPONSIVENESS ↓
     height: auto;
   }
 
-  .input__mail {
-    padding: 16px 32px;
+  #features .section__title,
+  #pricing .section__title {
+    font-size: 36px;
+  }
+
+  .section__title {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .start__btn {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    margin-bottom: 0px;
     line-height: 1.5;
+  }
+
+  .input__mail {
+    padding: 16px 0;
+    line-height: 1.5;
+    position: static;
+    padding-left: 32px;
   }
 
   .start__btn {
