@@ -1309,6 +1309,13 @@ MOBILE RESPONSIVENESS ↓
     display: block;
   }
 
+
+  .feature__row{
+    padding: 32px 8px;
+    margin: 0 16px;
+  }
+
+
   .feature {
     width: calc(50%);
   }
@@ -1502,4 +1509,12 @@ MOBILE RESPONSIVENESS ↓
   main {
     margin-bottom: 80px;
   }
+
+  .feature__row{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
 }
