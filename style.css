@@ -1257,6 +1257,15 @@ MOBILE RESPONSIVENESS ↓
   }
 }
 
+h1,
+.template__txt--large {
+  font-size: 36px;
+  color: #1a202c;
+  line-height: 1.25;
+}
+
+.template__txt--small{font-size: 16px;}
+
 @media (max-width: 1024px) {
   .btn__menu {
     display: block;
@@ -1267,6 +1276,18 @@ MOBILE RESPONSIVENESS ↓
   }
   footer {
     padding: 80px 32px;
+  }
+
+  .template__txt--small{
+    margin: 20px 0;
+  }
+
+  .template__txt--large {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
   }
 
   .nav__link--wrapper {
