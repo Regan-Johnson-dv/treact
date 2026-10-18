@@ -1254,7 +1254,7 @@ MOBILE RESPONSIVENESS ↓
 @media (max-width: 1280px) {
   header .row {
     align-items: flex-end;
-  }
+  
 }
 
 h1,
@@ -1264,7 +1264,29 @@ h1,
   line-height: 1.25;
 }
 
-.template__txt--small{font-size: 16px;}
+.template__txt--small {
+  font-size: 16px;
+  
+}
+
+.template__img--wrapper{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.template__img{
+  max-width: 512px;
+}
+
+}
+
+/* 
+
+
+1024
+
+
+ */
 
 @media (max-width: 1024px) {
   .btn__menu {
@@ -1278,7 +1300,29 @@ h1,
     padding: 80px 32px;
   }
 
-  .template__txt--small{
+  .hero,
+  .template__img--wrapper {
+    width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
+  }
+
+  .gray, .template__img--wrapper{
+    margin-top: 48px;
+  }
+
+  .customer__img{
+    padding-right: 0;
+  }
+
+  .hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .template__txt--small {
     margin: 20px 0;
   }
 
